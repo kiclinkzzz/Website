@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Header01.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.menuicon {
+    display: none;
+}
+
+.sidenav a {
+  display: none;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 65px;
+}
+
+ul li, .dropbtn{
+    display: inline-block;
+}
+
+ul li a, .dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+.dropbtn {
+    background-color: rgba(0,0,0,0.5);
+    font-size: 15px;
+}
+
+/* Dropdown Content setup(Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    min-width: 160px;
+    z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #ddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    width: 100%;
+    margin: auto;
+}
+
+.C {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 360px;
+    top: 340px;
+    border: none;
+}
+
+.D {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-left: 50px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 400px;
+    top: 340px;
+    border: none;
+}
+
+.E {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-left: 100px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 440px;
+    top: 340px;
+    border: none;
+}
+
+.F {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-left: 150px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 480px;
+    top: 340px;
+    border: none;
+}
+
+.G {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-left: 200px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 520px;
+    top: 340px;
+    border: none;
+}
+
+.H {
+    position: absolute;
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 50px;
+    margin-left: 250px;
+    z-index: 2;
+    background-color: white;
+    cursor: pointer;
+    left: 560px;
+    top: 340px;
+    border: none;
+}
+
+.Cs {
+    position: absolute;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 45px;
+    margin-left: 45px;
+    z-index: 3;
+    background-color: black;
+    cursor: pointer;
+    left: 360px;
+    top: 340px;
+    border: none;
+}
+
+
+.Ds {
+    position: absolute;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 45px;
+    margin-left: 95px;
+    z-index: 3;
+    background-color: black;
+    cursor: pointer;
+    left: 400px;
+    top: 340px;
+    border: none;
+}
+
+.Es {
+    position: absolute;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 45px;
+    margin-left: 145px;
+    z-index: 3;
+    background-color: black;
+    cursor: pointer;
+    left: 440px;
+    top: 340px;
+    border: none;
+}
+
+.Fs {
+    position: absolute;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 45px;
+    margin-left: 195px;
+    z-index: 3;
+    background-color: black;
+    cursor: pointer;
+    left: 480px;
+    top: 340px;
+    border: none;
+}
+
+.Gs {
+    position: absolute;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 45px;
+    margin-left: 245px;
+    z-index: 3;
+    background-color: black;
+    cursor: pointer;
+    left: 520px;
+    top: 340px;
+    border: none;
+}
+
+@media screen and (max-width: 1200px) {  
+  nav {
+    display: none;
+  }
+  
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .menuicon {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: seagreen;
+    margin: 6px 0;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 15px;}
+  }
+}
+
+@media screen and (max-width: 950px) {
+    .C, .D, .E, .F, .G, .H, .Cs, .Ds, .Es, .Fs, .Gs {
+        display: none;
+    }
+}

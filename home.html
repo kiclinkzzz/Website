@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="home.css" type="text/css">
+        <script>
+          /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+          function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          }
+
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+          function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+               <nav>
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <!-- 4 bands music with lyrics-->
+                    <li><div class="dropdown"><button class="dropbtn">Music</button>
+                        <div class="dropdown-content">
+                            <a href="MusicATC.html">Against The Current</a>
+                            <a href="MusicTC.html">The Cab</a>
+                            <a href="MusicP.html">Pendulum</a>
+                            <a href="MusicLP.html">Linkin Park</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 4 bands photo for bg-->
+                <li><div class="dropdown"><button class="dropbtn">Gallery</button>
+                        <div class="dropdown-content">
+                            <a href="GalleryATC.html">Against The Current</a>
+                            <a href="GalleryTC.html">The Cab</a>
+                            <a href="GalleryP.html">Pendulum</a>
+                            <a href="GalleryLP.html">Linkin Park</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Piano.html">Piano</a></li>
+                    <!--Music Player-->
+                    <li><a href="MusicPlayer.html">Music Player</a></li> 
+                    <li><a href="index.html">LOGOUT</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="MusicATC.html">(Music)ATC</a>
+              <a href="MusicTC.html">(Music)TC</a>
+              <a href="MusicP.html">(Music)P</a>
+              <a href="MusicLP.html">(Music)LP</a>
+              <a href="GalleryATC.html">(Gallery)ATC</a>
+              <a href="GalleryTC.html">(Gallery)TC</a>
+              <a href="GalleryP.html">(Gallery)P</a>
+              <a href="GalleryLP.html">(Gallery)LP</a>
+              <a href="Piano.html">Piano</a>
+              <a href="MusicPlayer.html">Music Player</a>
+              <a href="index.html">LOGOUT</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <div class="menuicon" onclick="openNav()"></div>
+            <div class="menuicon" onclick="openNav()"></div>
+            <div class="menuicon" onclick="openNav()"></div>
+
+           
+           
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content1">
+                        <article class="text">
+                            <h2>Against The Current - 2011</h2>
+                            <hr>
+                            <h3><i>Song : <a href="MusicATC.html" style="color:salmon">Gravity</a> - released on 2014/10/31</i></h3>
+                            <p><b><i>Against The Current</i></b> is American pop rock band based in Poughkeepsie, New York, and formed in 2011. The band currently consists of lead vocalist Chrissy Costanza, guitarist Dan Gow, and drummer Will Ferri. The group gained a sizable online following after posting covers of various popular songs on YouTube.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content2">
+                        <article class="text">
+                            <h2>The Cab - 2004</h2>
+                            <hr>
+                            <h3><i>Song : <a href="MusicTC.html" style="color:salmon">Endlessly</a> - released on 2012/11/14</i></h3>
+                            <p><b><i>The Cab</i></b> is an American rock band from Las Vegas, Nevada. They have been called "The Band You Need to Know 2008" by Alternative Press magazine. They were also featured in the '100 Bands You Need to Know in 2010' by the magazine and were one of the three bands featured on the cover page. Formed in 2004.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content3">
+                        <article class="text">
+                            <h2>Pendulum - 2002</h2>
+                            <hr>
+                            <h3><i>Song : <a href="MusicP.html" style="color:salmon">Watercolour</a> - released on 2010/4/1</i></h3>
+                            <p><b><i>Pendulum</i></b> is an Australian drum and bass and electronic rock band founded in 2002. Pendulum originally formed in the city of Perth, Western Australia, by Rob Swire, Gareth McGrillen and Paul "El Hornet" Harding. The band was later expanded to include members, Ben Mount, Peredur ap Gwynedd and KJ Sawka. Members Swire and McGrillen also formed the electro house duo Knife Party. The group is notable for its distinctive sound, mixing electronic music with hard rock and covering a wide range of genres.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content4">
+                        <article class="text">
+                            <h2>Linkin Park - 1996</h2>
+                            <hr>
+                            <h3><i>Song : <a href="MusicLP.html" style="color:salmon">What I've Done</a> - released on 2007/4/3</i></h3>
+                            <p><b><i>Linkin Park</i></b> is an American rock band from Agoura Hills, California. The band's current lineup comprises vocalist/rhythm guitarist Mike Shinoda, lead guitarist Brad Delson, bassist Dave Farrell, turntablist/keyboardist Joe Hahn and drummer Rob Bourdon, all of whom are founding members. Vocalists Mark Wakefield and Chester Bennington and bassist Kyle Christner are former members of the band. Formed in 1996.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Header01.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*menu key position*/
+ul{
+    float: right;
+    margin-top: 65px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+/*key sizing and effect*/
+ul li a{
+    text-decoration: none; /*delete underline of each key*/
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+/*key effect when mouseover*/
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*active key*/
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+/*logo position*/
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+/*menu size of the screen*/
+.main{
+    width: 100%;
+    margin: auto;
+}
+
+/*Welcome position*/
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Welcome sizing*/
+.title h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+/*Sign in*/
+.button1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    font-size: 40px;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*Sign Up*/
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* more space for better performance*/
+input[type=checkbox] {
+    margin-bottom: 15px;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: salmon;
+    outline: none;
+}
+
+/* Set a style for Cancel & Sign Up buttons */
+button[type=button] , button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+button[type=button].cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+button[type=button].cancelbtn, button[type=submit].signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Header01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Model size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Sign Up*/
+.button2 {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 40%;
+    margin-left: 34%;
+    position: absolute;
+}
+
+.button2 p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button2 p:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button2:hover p {
+    padding-right: 25px;
+}
+
+.button2:hover p:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 1200px) {
+    button[type=button].cancelbtn, button[type=submit].signupbtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title h1 {
+        font-size: 30px;
+    }
+    
+    .button2 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 15px;
+    }
+    
+    .btn{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title h1 {
+        font-size: 30px;
+    }
+    
+    .button2 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 15px;
+    }
+    
+    .btn{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+    
+    .title h1 {
+        font-size: 15px;
+    }
+    
+    .button2 {
+        position: absolute;
+        top: 45%;
+        left: 6%;
+        font-size: 10px;
+    }
+    
+    .btn{
+        font-size: 10px;
+    }
+}

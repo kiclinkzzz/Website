@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Piano</title>
+        <link rel="stylesheet" href="Piano.css" type="text/css">
+        <script>
+            var CAudio = new Audio()
+            CAudio.src = "C.wav";
+            
+            var CsAudio = new Audio()
+            CsAudio.src = "Cs.wav";
+
+            var DAudio = new Audio()
+            DAudio.src = "D.wav";
+
+            var DsAudio = new Audio()
+            DsAudio.src = "Ds.wav";
+
+            var EAudio = new Audio()
+            EAudio.src = "E.wav";
+
+            var EsAudio = new Audio()
+            EsAudio.src = "Es.wav";
+
+            var FAudio = new Audio()
+            FAudio.src = "F.wav";
+
+            var FsAudio = new Audio()
+            FsAudio.src = "Fs.wav";
+
+            var GAudio = new Audio()
+            GAudio.src = "G.wav";
+
+            var GsAudio = new Audio()
+            GsAudio.src = "Gs.wav";
+
+            var HAudio = new Audio()
+            HAudio.src = "H.wav";
+
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+
+    </head>
+    <body>
+        <header>
+            <div class="main">
+               <nav>
+                <div class="logo">
+                    <a href="home.html"><img src="logo.png"></a>
+                </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <!-- 4 bands music with lyrics-->
+                    <li><div class="dropdown"><button class="dropbtn">Music</button>
+                    <div class="dropdown-content">
+                        <a href="MusicATC.html">Against The Current</a>
+                        <a href="MusicTC.html">The Cab</a>
+                        <a href="MusicP.html">Pendulum</a>
+                        <a href="MusicLP.html">Linkin Park</a>
+                    </div>
+                    </div>
+                </li>
+                <!-- 4 bands photo for bg-->
+                <li><div class="dropdown"><button class="dropbtn">Gallery</button>
+                        <div class="dropdown-content">
+                            <a href="GalleryATC.html">Against The Current</a>
+                            <a href="GalleryTC.html">The Cab</a>
+                            <a href="GalleryP.html">Pendulum</a>
+                            <a href="GalleryLP.html">Linkin Park</a>
+                        </div>
+                    </div>
+                </li>
+                    <li  class="active"><a href="#">Piano</a></li>
+                    <!--Music Player-->
+                    <li><a href="MusicPlayer.html">Music Player</a></li> 
+                    <li><a href="index.html">LOGOUT</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="home.html">Home</a>
+              <a href="MusicATC.html">(Music)ATC</a>
+              <a href="MusicTC.html">(Music)TC</a>
+              <a href="MusicP.html">(Music)P</a>
+              <a href="MusicLP.html">(Music)LP</a>
+              <a href="GalleryATC.html">(Gallery)ATC</a>
+              <a href="GalleryTC.html">(Gallery)TC</a>
+              <a href="GalleryP.html">(Gallery)P</a>
+              <a href="GalleryLP.html">(Gallery)LP</a>
+              <a href="MusicPlayer.html">Music Player</a>
+              <a href="index.html">LOGOUT</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <div class="menuicon" onclick="openNav()"></div>
+        <div class="menuicon" onclick="openNav()"></div>
+        <div class="menuicon" onclick="openNav()"></div>
+        </header>
+        <button class="C" onclick="CAudio.play()"></button>
+        <button class="Cs" onclick="CsAudio.play()"></button>
+
+        <button class="D" onclick="DAudio.play()"></button>
+        <button class="Ds" onclick="DsAudio.play()"></button>
+
+        <button class="E" onclick="EAudio.play()"></button>
+        <button class="Es" onclick="EsAudio.play()"></button>
+
+        <button class="F" onclick="FAudio.play()"></button>
+        <button class="Fs" onclick="FsAudio.play()"></button>
+
+        <button class="G" onclick="GAudio.play()"></button>
+        <button class="Gs" onclick="GsAudio.play()"></button>
+
+        <button class="H" onclick="HAudio.play()"></button>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+    <link rel="stylesheet" href="MusicATC.css">
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="main">
+           <nav>
+            <div class="logo">
+                <a href="home.html"><img src="logo.png"></a>
+            </div>
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li>
+                <!-- 4 bands music with lyrics-->
+                <li><div class="dropdown"><button class="dropbtn">Music</button>
+                    <div class="dropdown-content">
+                        <a href="#">Against The Current</a>
+                        <a href="MusicTC.html">The Cab</a>
+                        <a href="MusicP.html">Pendulum</a>
+                        <a href="MusicLP.html">Linkin Park</a>
+                    </div>
+                    </div>
+                </li>
+                <!-- 4 bands photo for bg-->
+                <li><div class="dropdown"><button class="dropbtn">Gallery</button>
+                        <div class="dropdown-content">
+                            <a href="GalleryATC.html">Against The Current</a>
+                            <a href="GalleryTC.html">The Cab</a>
+                            <a href="GalleryP.html">Pendulum</a>
+                            <a href="GalleryLP.html">Linkin Park</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="Piano.html">Piano</a></li>
+                <!--Music Player-->
+                <li><a href="MusicPlayer.html">Music Player</a></li> 
+                <li><a href="index.html">LOGOUT</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="home.html">Home</a>
+              <a href="MusicTC.html">(Music)TC</a>
+              <a href="MusicP.html">(Music)P</a>
+              <a href="MusicLP.html">(Music)LP</a>
+              <a href="GalleryATC.html">(Gallery)ATC</a>
+              <a href="GalleryTC.html">(Gallery)TC</a>
+              <a href="GalleryP.html">(Gallery)P</a>
+              <a href="GalleryLP.html">(Gallery)LP</a>
+              <a href="Piano.html">Piano</a>
+              <a href="MusicPlayer.html">Music Player</a>
+              <a href="index.html">LOGOUT</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <div class="menuicon" onclick="openNav()"></div>
+        <div class="menuicon" onclick="openNav()"></div>
+        <div class="menuicon" onclick="openNav()"></div>
+        
+        <div class="lyric">
+            <p>Do you remember feeling invincible?<br>
+                When there was trouble it was us against the world<br>
+                We kept running, running through the night<br>
+                Chasing the sun 'til anything felt right<br><br>
+
+                Can you save me now?<br>
+                I get lost up in the clouds<br>
+                Can you save me now?<br>
+                You were my gravity<br>
+                Can you save me now?<br>
+                When the ground drops out I get lost in the clouds<br>
+                Save me now<br>
+                You were my gravity<br>
+                Now my world is shattering<br>
+
+                Ooooh, you were my gravity<br>
+                Ooooh, you were my gravity<br>
+
+                You left me out there with no one but myself<br>
+                In an open field for the lightning to strike me down<br>
+                I was the moon, you were the sun<br>
+                I can't seem to shine now that you're gone<br>
+                Now I'm out of orbit cause you left without warning<br>
+                Are you somewhere better now?<br><br>
+
+                Can you save me now?<br>
+                I get lost up in the clouds<br>
+                Can you save me now?<br>
+                You were my gravity<br>
+                Can you save me now?<br>
+                When the ground drops out I get lost in the clouds<br>
+                Save me now<br>
+                You were my gravity<br>
+                Now my world is shattering<br><br>
+
+                Ooooh, you were my gravity<br>
+                Ooooh, you were my gravity<br><br>
+
+                When you went away, thought I'd never be the same<br>
+                Would the nightmare ever end?<br>
+                If I could do it again I wouldn't change a thing 'cause it's made me who I am<br><br>
+
+                And now I'm shattering<br><br>
+
+                Can you save me now?<br>
+                When the ground drops out I get lost in the clouds<br>
+                Save me now<br>
+                You were my gravity<br>
+                Can you save me now?<br>
+                When the ground drops out I get lost in the clouds<br>
+                Save me now<br>
+                You were my gravity<br>
+                Now my world is shattering<br><br>
+
+                Ooooh, now my world is shattering<br>
+                Ooooh, you were my gravity</p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4ydyspst8NY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </header>   
+</body>
+</html>
